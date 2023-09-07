@@ -1,0 +1,29 @@
+
+body{
+    margin: 50px;
+}
+
+.filtros{
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.table{
+    text-align: center;
+    border: 1px solid ;
+    width: 100%;
+    
+}
+
+.table {
+    border: 1px solid #c9c9c9;
+    border-radius: 24px;
+    background-color: #dcdcdc;
+}
+
+
+
+td, th{
+    padding: 10px;
+}

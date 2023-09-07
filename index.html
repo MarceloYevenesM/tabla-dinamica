@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/styles.css" />
+    <title>Tabla dinamica</title>
+  </head>
+  <body>
+    <h1>Tabla de personas</h1>
+    <div class="filtros">
+      <div class="select-nacionalidad">
+        <label for="nacionalidad">Nacionalidad</label>
+        <select name="nacionalidad" id="nacionalidad" class="selectNacionalidad">
+          <option value="todos">Todos</option>
+          <option value="chile">Chile</option>
+          <option value="argentina">Argentina</option>
+          <option value="brasil">Brasil</option>
+        </select>
+      </div>
+      <div class="select-genero">
+        <label for="genero">Genero</label>
+        <select name="genero" id="genero" class="estadoCivil">
+          <option value="todos">Todos</option>
+          <option value="soltero">Soltero</option>
+          <option value="casado">Casado</option>
+          <option value="viudo">Viudo</option>
+          <option value="divorciado">Divorciado</option>
+        </select>
+      </div>
+      <div>
+        <input type="checkbox" />
+        <label for="mayor-edad">Es mayor de edad</label>
+      </div>
+      <div><input type="text" placeholder="Buscar" /></div>
+    </div>
+    <div class="tabla">
+      <table class="table">
+        <tr class="head">
+          <th>Nombre</th>
+          <th>Edad</th>
+          <th>País</th>
+          <th>Estado Civil</th>
+          <th>Genero</th>
+          <th>Activo</th>
+        </tr>
+        <tbody class="table-body"></tbody>
+       
+      </table>
+    </div>
+
+    <script src="./assets/app.js"></script>
+  </body>
+</html>
